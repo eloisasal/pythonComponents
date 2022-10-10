@@ -30,9 +30,6 @@ class Launcher(QWidget):
     def setAutoSize(self, enableAutoSize):
         self.isAutoSizeEnabled = enableAutoSize
     
-    def setDeeplinkPrefix(self, deeplinkPrefix):
-        self.deepLinkPrefix = deeplinkPrefix
-    
     def setDefaultOS(self, defaultiOS):
         self.defaultiOS = defaultiOS
     
