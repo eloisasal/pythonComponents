@@ -21,6 +21,12 @@ class Launcher(QWidget):
     deepLinkPrefix = ''
     positions = [(i, j) for i in range(6) for j in range(4)]
 
+    def setDeeplinks(self, deepLinks):
+        self.deeplinks = deepLinks
+        
+    def setDeepLinkPrefix(self, deepLinkPrefix):
+        self.deepLinkPrefix = deepLinkPrefix
+    
     def setAutoSize(self, enableAutoSize):
         self.isAutoSizeEnabled = enableAutoSize
     
