@@ -15,17 +15,26 @@ from PyQt6.QtWidgets import (QWidget, QMessageBox, QApplication, QGridLayout,
 from functools import partial
 
 class Launcher(QWidget):
-
+    isAutoSizeEnabled = false
+    defaultiOS = true
     deeplinks = []
     deepLinkPrefix = ''
     positions = [(i, j) for i in range(6) for j in range(4)]
 
-
+    def setAutoSize(self, enableAutoSize):
+        self.isAutoSizeEnabled = enableAutoSize
+    
+    def setDeeplinkPrefix(self, deeplinkPrefix):
+        self.deepLinkPrefix = deeplinkPrefix
+    
+    def setDefaultOS(self, defaultiOS):
+        self.defaultiOS = defaultiOS
+    
     def __init__(self, deepLinkPrefix, deeplinks):
         super().__init__()
-        self.deepLinkPrefix = deepLinkPrefix
-        self.deeplinks = deeplinks
-        self.initUI()
+        #self.deepLinkPrefix = deepLinkPrefix
+        #self.deeplinks = deeplinks
+        #self.initUI()
 
     def initUI(self):
         grid = QGridLayout()
