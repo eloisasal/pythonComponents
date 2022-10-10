@@ -15,8 +15,8 @@ from PyQt6.QtWidgets import (QWidget, QMessageBox, QApplication, QGridLayout,
 from functools import partial
 
 class Launcher(QWidget):
-    isAutoSizeEnabled = false
-    defaultiOS = true
+    isAutoSizeEnabled = False
+    defaultiOS = True
     deeplinks = []
     deepLinkPrefix = ''
     positions = [(i, j) for i in range(6) for j in range(4)]
