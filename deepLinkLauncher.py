@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 """
-How to install the missing libraries:
+How to install the missing libraries in iOS:
     python3 -m pip install --upgrade pip
     pip3 install PyQt6
 How to run the beta program:
