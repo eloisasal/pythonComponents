@@ -167,17 +167,17 @@ def getKeyFromValue(dictionary, value):
             return key
     return "The value " + value + " is not a valid value.\n"
 
+def debug():
+    clearScreen()
+    print("Start the testing!")
+    print(getHiraganaFromRomaji('a'))
+    print(getHiraganaFromRomaji('b')) 
 
-clearScreen()
-print("Start the testing!")
-print(getHiraganaFromRomaji('a'))
-print(getHiraganaFromRomaji('b'))
-
-print("Printing the sequence 'あいうえお'")
-print(getHiraganaFromRomajiString('あいうえお'))
-
-print("Printing the sequence 'onegai'")
-print(getHiraganaFromRomajiString('onegai')) 
-#needs an update to differentiate between 'g' 'a' and 'ga' (and other sounds who needs more than one character)
-print(getKeyFromValue(romaji2hiragana, u'\u3042'))
-print(getKeyFromValue(romaji2hiragana, 'あ'))
+    print("Printing the sequence 'あいうえお'")
+    print(getHiraganaFromRomajiString('あいうえお'))
+    
+    print("Printing the sequence 'onegai'")
+    print(getHiraganaFromRomajiString('onegai')) 
+    #needs an update to differentiate between 'g' 'a' and 'ga' (and other sounds who needs more than one character)
+    print(getKeyFromValue(romaji2hiragana, u'\u3042'))
+    print(getKeyFromValue(romaji2hiragana, 'あ'))
